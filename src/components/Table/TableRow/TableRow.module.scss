@@ -1,0 +1,16 @@
+.buttons {
+  display: flex;
+  gap: 10px;
+
+  button {
+    text-decoration: underline;
+
+    &:first-child {
+      color: var(--color-blue);
+    }
+
+    &:last-child {
+      color: var(--color-red);
+    }
+  }
+}

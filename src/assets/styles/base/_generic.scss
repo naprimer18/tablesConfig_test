@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 16px;
+  text-size-adjust: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+h1,
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+
+  strong {
+    color: currentColor;
+  }
+}
+
+input,
+select,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+  }
+}
+
+input,
+select,
+textarea {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+select,
+textarea {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100svh;
+  background: var(--body-bg);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-white);
+}
+
+body,
+html {
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+label,
+p {
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-text);
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-navy) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
